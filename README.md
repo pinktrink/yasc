@@ -8,7 +8,7 @@ You know the spiel. `npm install -g yasc`
 
 ## Usage (Command Line)
 
-yasc --config=/path/to/config
+`yasc --config=/path/to/config`
 
 If a config file isn't passed, it will look for a file called yasc.json in the current directory. If it can't find yasc.json, it explodes and yells at you.
 
@@ -103,6 +103,6 @@ YASC comes currently with 5 preinstalled packs:
 
 ## Creating Packs
 
-Creating packs is rediculously simple (no seriously). All you need to do is add the dependencies inside of package.json, then create a file, pack_name.js, inside of the packs directory. This file needs one method only: module.exports.compile. All that needs to do is take incoming data (the contents of the file being worked on) and a callback function. Once it's finished doing what it needs to do to the data, the resulting data should be passed to the callback function. Seriously. Look at the other packs. It's rediculously easy.
+Creating packs is ridiculously simple (no seriously). All you need to do is add the dependencies inside of package.json, then create a file, pack_name.js, inside of the packs directory. This file needs one method only: module.exports.compile. All that needs to do is take incoming data (the contents of the file being worked on) and a callback function. Once it's finished doing what it needs to do to the data, the resulting data should be passed to the callback function. Seriously. Look at the other packs. It's ridiculously easy.
 
 Feel free to send any pull requests for any packs you wish to add in.
