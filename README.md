@@ -2,6 +2,8 @@
 
 YASC will monitor directories and compile or transform files based on a given regex and pack name.
 
+It's kind of like Grunt or Guard, but it's stupid simple and easy to use.
+
 ## Installation
 
 You know the spiel. `npm install -g yasc`
