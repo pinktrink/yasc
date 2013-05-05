@@ -79,7 +79,7 @@ It is recursive, so you can have a `then` directive inside of another `then` dir
 
 ## Warning
 
-If you want to perform multiple actions on a file, such as compiling then minifying, it's best to use `then` directives. The system is asynchronous, and can act on muptiple files at once using workers. `then` directives are synchronous, so anything inside of a `then` block will happen only after the encapsulating block has finished.
+If you want to perform multiple actions on a file, such as compiling then minifying, it's best to use `then` directives. The system is asynchronous, and can act on multiple files at once using workers. `then` directives are synchronous, so anything inside of a `then` block will happen only after the encapsulating block has finished.
 
 ## How it Works
 
