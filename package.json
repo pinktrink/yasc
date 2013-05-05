@@ -1,0 +1,16 @@
+{
+	"name" : "yasc",
+	"description" : "Yet Another Script Compiler: A system to watch directories for specific files and compile them with a given engine.",
+	"version" : "0.1.0",
+	"private" : false,
+	"dependencies" : {
+		"coffee-script" : "latest",
+		"coco" : "latest",
+		"node-sass" : "latest",
+		"uglify-js" : "latest",
+		"less" : "latest"
+	},
+	"bin" : {
+		"yasc" : "cli.js"
+	}
+}
