@@ -11,8 +11,6 @@ cluster.setupMaster({
 	exec : 'worker.js'
 });
 
-setInterval(function(){}, 1000000);  //Keep app alive.
-
 module.exports = {
 	parseConfig : function(loc, cb){
 		if(!loc){
