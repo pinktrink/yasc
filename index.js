@@ -34,6 +34,7 @@ module.exports = {
 	config : function(config){
 		conf = config;
 	},
+	/* This method is useless until worker-less functionality is implemented.
 	loadPacks : function(){
 		var packsNeeded = [];
 		
@@ -58,7 +59,7 @@ module.exports = {
 				throw 'Pack does not exist: ' + packsNeeded[i];
 			}
 		}
-	},
+	},*/
 	newWorker : function(cb){
 		if(!cb){
 			return;
