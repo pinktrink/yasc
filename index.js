@@ -25,9 +25,7 @@ module.exports = {
 			conf = JSON.parse(data);
 			
 			if(cb){
-				cb({
-					conf : conf
-				});
+				cb(conf);
 			}
 		});
 	},
@@ -156,5 +154,7 @@ module.exports = {
 				});
 			})(piece);
 		}
+		
+		setInterval(function(){}, 1000000);  //Keep app alive.
 	}
 }

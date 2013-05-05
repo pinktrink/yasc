@@ -1,8 +1,12 @@
 #!/usr/bin/env node
 
-yasc = require('./index');
+var yasc = require('./index'),
+	configLoc = false;
 
-yasc.parseConfig();
-yasc.watch();
+for(var arg in process.argv){
+	if(~process.argv[arg].indexOf('--config=')){
+		configLoc = process.argv[arg].substr(9);
+	}
+}
 
-setInterval(function(){}, 1000000);  //Keep app alive.
+yasc.parseConfig(configLoc, yasc.watch);
