@@ -17,7 +17,7 @@ If a config file isn't passed, it will look for a file called yasc.json in the c
 It's really simple. `require('yasc')` exports 5 methods.
 
 * `yasc.config()` can be passed an object that will act as the configuration for YASC.
-* `yasc.parseConfig()` parses the configuration. It's pretty simple. No arguments.
+* `yasc.parseConfig()` takes 2 arguments, `loc` (location) and `cb` (callback), checks that the given configuration file exists, then reads it, and once finished calls the callback with the config as the argument.
 * `yasc.newWorker()` will wait until it's safe to spawn a worker, spawn one, and once it's online, call the callback you pass it with the worker as the argument.
 * `yasc.perform()` takes 2 arguments, `cnf` (config) and `file`. It will spawn a new worker and perform an action on the given file, based on the given config block.
 * `yasc.watch()` fires up the watch loop. No arguments.
