@@ -8,7 +8,8 @@
 		"coco" : "latest",
 		"node-sass" : "latest",
 		"uglify-js" : "latest",
-		"less" : "latest"
+		"less" : "latest",
+		"stylus" : "latest"
 	},
 	"bin" : {
 		"yasc" : "cli.js"
